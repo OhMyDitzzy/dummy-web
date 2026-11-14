@@ -1,0 +1,14 @@
+{
+  "name": "pawmart-pet-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo toko hewan peliharaan dengan Express.js untuk Vercel",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

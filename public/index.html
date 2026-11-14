@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf2">
+  <meta name="description" content="PawMart — kebutuhan hewan kesayangan dalam satu tempat.">
+  <title>PawMart — Pet Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">🐾</span> paw<span>mart</span></a>
+    <nav><a href="#produk">Produk</a><a href="#tentang">Tentang kami</a><a href="#kontak">Kontak</a></nav>
+    <button class="cart-button" id="cartButton" aria-label="Buka keranjang">🛒 <span>Keranjang</span><b id="cartCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">♡ EVERYTHING FOR YOUR BEST FRIEND</span>
+        <h1>Teman berbulu,<br><em>bahagia</em> selalu.</h1>
+        <p>Semua kebutuhan si manis ada di sini. Mulai dari makanan favorit sampai aksesori lucu, pilih yang terbaik untuk sahabat kecilmu.</p>
+        <a class="primary-button" href="#produk">Belanja sekarang <span>→</span></a>
+        <div class="hero-note"><span>★★★★★</span> Disayang oleh para pet parents</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi hewan peliharaan">
+        <div class="sun"></div><div class="blob"></div>
+        <div class="pet-card pet-cat">🐱<small>meow!</small></div>
+        <div class="pet-card pet-dog">🐶<small>woof!</small></div>
+        <span class="float float-one">♡</span><span class="float float-two">✦</span>
+        <div class="round-sticker">HAPPY<br>PAWS<br>ONLY!</div>
+      </div>
+    </section>
+
+    <section class="perks">
+      <div><span>🚚</span><p><b>Pengiriman mudah</b><small>Pesanan praktis dari rumah</small></p></div>
+      <div><span>💛</span><p><b>Produk pilihan</b><small>Untuk sahabat kesayangan</small></p></div>
+      <div><span>🐾</span><p><b>Belanja menyenangkan</b><small>Temukan favorit mereka</small></p></div>
+    </section>
+
+    <section class="products-section" id="produk">
+      <div class="section-heading"><div><span class="eyebrow">PAW-SOME PICKS</span><h2>Favorit si <em>kesayangan</em></h2></div><p>Temukan kebutuhan harian<br>untuk teman terbaikmu.</p></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="Semua">Semua</button>
+        <button class="filter" data-category="Makanan">Makanan</button>
+        <button class="filter" data-category="Mainan">Mainan</button>
+        <button class="filter" data-category="Aksesori">Aksesori</button>
+        <button class="filter" data-category="Perawatan">Perawatan</button>
+      </div>
+      <div class="product-grid" id="productGrid"><div class="loading">Menyiapkan produk lucu untukmu…</div></div>
+    </section>
+
+    <section class="about" id="tentang">
+      <div class="about-icon">🐕‍🦺</div>
+      <div><span class="eyebrow">A LITTLE LOVE GOES A LONG WAY</span><h2>Karena mereka bagian dari keluarga.</h2><p>PawMart hadir untuk membantu pet parents menemukan kebutuhan hewan kesayangan dengan cara yang simpel dan menyenangkan.</p></div>
+    </section>
+
+    <section class="contact" id="kontak"><div><span class="eyebrow">SAY HELLO</span><h2>Ada yang bisa kami bantu?</h2><p>Hubungi kami untuk pertanyaan seputar produk dan pesanan.</p></div><a class="primary-button" href="mailto:halo@pawmart.example">Email PawMart ↗</a></section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">🐾</span> paw<span>mart</span></a><small>© 2026 PawMart. Dibuat dengan cinta untuk para pet parents.</small></footer>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang belanja">
+    <div class="drawer-head"><h3>Keranjangmu 🛒</h3><button id="closeCart" aria-label="Tutup">✕</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">Keranjangmu masih kosong. Yuk pilih kebutuhan si manis!</p></div>
+    <div class="cart-footer"><div class="total"><span>Total</span><b id="cartTotal">Rp0</b></div><button class="primary-button checkout" id="checkout">Buat pesanan demo →</button><small>Demo: belum ada pembayaran atau pengiriman sungguhan.</small></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
